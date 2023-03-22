@@ -1,3 +1,45 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  width: 45%;
+}
+
+.left-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.refresh-btn {
+  height: 25px;
+}
+
+.score-list {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: -0.1px;
+}
+
+hr {
+  margin-left: -40px;
+}
+
+ul li {
+  text-indent: -20px;
+}
+
+input {
+  margin-bottom: 7.5%;
 }
