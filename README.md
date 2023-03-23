@@ -60,6 +60,7 @@
 
 - **[API stores inputted score when submit button is clicked]**
 - **[Refresh button updates the list of scores when clicked]**
+- **[Responsive User Interface]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +117,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Unique, better styled user interface]**
+- **[Scores ordered in descending order]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
