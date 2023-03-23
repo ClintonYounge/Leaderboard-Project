@@ -1,13 +1,9 @@
 import './style.css';
+import { refreshScores, sendData } from './modules/handleData.js';
 
-const scores = require('./modules/scores.js');
-
-const scoreList = document.querySelector('.score-list');
-
-let output = '';
-
-scores.forEach((score) => {
-  output += `<li>${score.name}: ${score.score}</li><hr>`;
+refreshScores();
+document.querySelector('.refresh-btn').addEventListener('click', refreshScores);
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  sendData();
 });
-
-scoreList.innerHTML = output;
