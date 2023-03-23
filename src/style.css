@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
 * {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  color: white;
+  font-family: 'Mynerve';
+}
+
+body {
+  background: linear-gradient(179.2deg, rgb(34, 34, 34) 0%, rgb(8, 0, 153) 29.7%, rgb(118, 6, 166) 63.4%, rgba(233, 0, 64, 0.58) 100.1%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .container {
@@ -32,8 +43,23 @@
   margin-top: -0.1px;
 }
 
-hr {
-  margin-left: -40px;
+header, h2 {
+  color: rgb(160, 131, 188);
+}
+
+header {
+  font-size: 40px;
+  margin-left: 2%;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 li {
@@ -42,10 +68,40 @@ li {
   margin: auto;
   justify-content: space-between;
   text-indent: -40px;
+  font-size: 20px;
+  margin-bottom: 3%;
 }
 
 input {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 7.5%;
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+input::placeholder {
+  color: rgb(141, 116, 164);
+}
+
+button {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.submit-btn {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .submit-btn {
+    align-self: flex-start;
+  }
 }
