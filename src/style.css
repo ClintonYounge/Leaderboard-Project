@@ -41,6 +41,8 @@ body {
   width: 100%;
   border: 1px solid black;
   margin-top: -0.1px;
+  max-height: 50%;
+  overflow: scroll;
 }
 
 header,
@@ -61,6 +63,10 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+ul {
+  overflow: scroll;
 }
 
 li {
@@ -91,6 +97,11 @@ button {
   align-self: flex-end;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     display: flex;
@@ -104,5 +115,10 @@ button {
 
   .submit-btn {
     align-self: flex-start;
+  }
+
+  .score-list {
+    overflow: scroll;
+    height: 350px;
   }
 }
